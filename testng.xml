@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="Suite" parallel="tests" thread-count="2">
+<!-- <suite name="Suite">-->
+    <test name="ChromeTestLocal">
+        <parameter name="hubhost" value="172.27.232.2"></parameter>
+        <parameter name="hubport" value="4445"></parameter>
+        <parameter name="platform" value="mac"></parameter>
+        <parameter name="browser" value="chrome"></parameter>
+        <classes>
+            <class name="CrossBrowserTest" />
+        </classes>
+    </test>
+    <test name="firefoxtestCloud">
+        <parameter name="hubhost" value="172.27.232.2"></parameter>
+        <parameter name="hubport" value="4445"></parameter>
+        <parameter name="platform" value="mac"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="CrossBrowserTest" />
+        </classes>
+    </test>
+    <!--<test name="chromeSanityTest">
+        <parameter name="hubhost" value="172.27.232.2"></parameter>
+        <parameter name="hubport" value="4445"></parameter>
+        <parameter name="platform" value="mac"></parameter>
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="SanityTest" />
+        </classes>
+    </test> -->
+</suite>
