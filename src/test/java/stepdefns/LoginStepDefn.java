@@ -2,13 +2,15 @@ package stepdefns;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
+
 import pageobjects.LoginPage;
-import factories.DriverThreadManager;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import factories.DriverThreadManager;
+
 
 
 public class LoginStepDefn {
@@ -42,7 +44,7 @@ public class LoginStepDefn {
 	public void user_enters_valid_username_and_password() throws Throwable {
 		LoginPage loginPg = new LoginPage(driver);
 		loginPg.strUserName = "jafrica";
-		loginPg.strPassword = "Joel27070";		
+		loginPg.strPassword = "xxx";		
 		loginPg.enterUserName();
 		loginPg.enterPassword();
 		loginPg.signin();
@@ -62,7 +64,7 @@ public class LoginStepDefn {
 	public void user_enters_invalid_username_and_password() throws Throwable {
 		LoginPage loginPg = new LoginPage(driver);
 		loginPg.strUserName = "jafrica";
-		loginPg.strPassword = "Joel27070xx";		
+		loginPg.strPassword = "xxx";		
 		loginPg.enterUserName();
 		loginPg.enterPassword();
 		loginPg.signin();
